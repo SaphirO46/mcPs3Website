@@ -25,3 +25,18 @@
   width: 45%;
   padding-right: 2%;
 }
+
+.name-discord{
+  font-size: large;
+  margin: auto;
+  color: rgba(34, 34, 34, 0.84);
+
+}
+
+.txt-desc-discord{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
