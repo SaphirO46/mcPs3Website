@@ -20,7 +20,8 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css" integrity="sha512-+oEiKVGJRHutsibRYkkTIfjI0kspDtgJtkIlyPCNTCFCdhy+nSe25nvrCw7UpHPwNbdmNw9AkgGA+ptQxcjPug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.css" integrity="sha512-2UlItOJI2xOc8T1IjOJNrutOsPuVPR+x4lILJ+X9ouT0FYu7oY+f7y0NGWO1LRwmu02ZwZksvq83tIk8baHu3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -33,3 +34,127 @@
 
 <body>
 <iframe src="header.html" style="width: 100%; height: 50px" class="header-iframe"></iframe>
+
+
+
+<section class="hero is-medium is-link ">
+  <div class="hero-body">
+    <span class="not-on-desktop"><center><p class="title" >DISCORD</p> <br>
+Discover Discord servers dedicated to Minecraft PS3! Join us to chat, share your creations, and find new gaming buddies on Minecraft PS3. See you on the servers!
+        </center></span>
+    <div class="fixed-grid has-3-cols not-on-mobile">
+      <div class="grid txt-desc-discord" >
+        <div class="cell is-col-span-2" style="padding-right: 10%">
+        <span><center><p class="title" >Modding</p> <br>
+Discover Discord servers dedicated to Minecraft PS3! Join us to chat, share your creations, and find new gaming buddies on Minecraft PS3. See you on the servers!
+        </center></span>
+        </div>
+        <div class="cell not-on-mobile">
+          <center>
+            <img  src="img/discord-ico.png">
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <p class="title">SPRX</p>
+    <center>
+        <div class="grid is-col-min-12" id="sprx-galeries">
+
+        <div class="cell cell-mods">
+          <span class="name-discord">Kagura client V1</span>
+          <img class="img-mods" src="https://img.youtube.com/vi/kJyOtf0Q3dM/maxresdefault.jpg" alt="YouTube Video Preview">
+          <a class="button is-primary is-rounded" href="./download/KaguraClientV1.zip" download="KaguraClientV1.zip">Download</a>
+        </div>
+
+        </div>
+    </center>
+  </div>
+</section>
+
+<section class="hero is-medium">
+  <div class="hero-body">
+    <p class="title">RTM</p>
+    <center>
+      <div class="grid is-gap-5" id="rtm-galeries">
+
+        <div class="cell cell-mods">
+          <span class="name-discord">Discord notifier minecraft</span>
+          <img class="img-mods" src="https://img.youtube.com/vi/kJyOtf0Q3dM/maxresdefault.jpg" alt="YouTube Video Preview">
+          <a class="button is-primary is-rounded" href="./download/KaguraClientV1.zip" download="KaguraClientV1.zip">Download</a>
+        </div>
+
+      </div>
+    </center>
+  </div>
+</section>
+
+
+
+
+
+  <script>
+    // Votre JSON Discord
+    var dataSprx = {
+        "sprx": [
+          {
+            "download": "./download/KaguraClientV1.zip",
+            "video": "https://youtu.be/kJyOtf0Q3dM?si=BVEj5TrU__e0BI5e",
+            "name": "Kagura Sprx"
+          },
+          {
+            "download": "https://discord.gg/9bHZTdm8Ee",
+            "video": "https://cdn.discordapp.com/icons/896429833133887588/cece532e082e1e9bc833ca319f9cfea6.webp",
+            "name": "Kagura Sprx"
+          }
+        ]
+      }
+    ;
+  </script>
+
+  <script>
+    // Votre JSON Discord
+    var dataRtm = {
+      "rtm": [
+        {
+          "download": "https://discord.gg/9bHZTdm8Ee",
+          "video": "https://youtu.be/kJyOtf0Q3dM?si=BVEj5TrU__e0BI5e",
+          "name": "Kagura Sprx"
+        }
+      ]
+    }    ;
+  </script>
+
+
+  <script>
+    //SPRX INIT
+    var galeriesDiv = document.getElementById("sprx-galeries");
+
+    // Parcourir le tableau JSON et créer les divs correspondantes
+    dataSprx.discord.forEach(function(itemSprx) {
+      var div = document.createElement("div");
+      div.className = "cell";
+      div.innerHTML = '          <span class="name-discord">Kagura client V1</span>\n' +
+        '          <img class="img-mods" src="https://img.youtube.com/vi/kJyOtf0Q3dM/maxresdefault.jpg" alt="YouTube Video Preview">\n' +
+        '          <a class="button is-primary is-rounded" href="./download/KaguraClientV1.zip" download="KaguraClientV1.zip">Download</a>';
+      galeriesDiv.appendChild(div);
+    });
+  </script>
+
+  <script>
+    //RTM INIT
+    var galeriesDiv = document.getElementById("rtm-galeries");
+
+    // Parcourir le tableau JSON et créer les divs correspondantes
+    dataRtm.discord.forEach(function(itemRtm) {
+      var div = document.createElement("div");
+      div.className = "cell";
+      div.innerHTML = '<a href="' + item.lien + '"><img class="img-discord" src="' + item.image + '" alt="' + item.name + '"><br><span class="name-discord">' + item.name + '</span></a>';
+      galeriesDiv.appendChild(div);
+    });
+  </script>

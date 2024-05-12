@@ -42,7 +42,7 @@
         {
           "lien": "https://discord.gg/9bHZTdm8Ee",
           "image": "https://cdn.discordapp.com/icons/896429833133887588/cece532e082e1e9bc833ca319f9cfea6.webp",
-          "name": "Kagura"
+          "name": "Kagura Modding"
         },
         {
           "lien": "https://discord.gg/RayS528fp8",
@@ -50,19 +50,19 @@
           "name": "TMC Backup"
         },
         {
-          "lien": "https://discord.gg/WVD92EgERE",
+          "lien": "https://discord.gg/pRKxfyn73R",
           "image": "https://cdn.discordapp.com/icons/1062589624838520912/9abd29aedd95523e73c4ceda5b1ea6de.webp",
-          "name": "no name"
+          "name": "Saphiro Modding"
         },
         {
           "lien": "https://discord.gg/s46mb87e6r",
           "image": "https://cdn.discordapp.com/icons/1050579505263149097/7dc21fa5316ce9030a5aa298f0bcf3f0.webp",
-          "name": "SPEERDUN ZEPHYR"
+          "name": "Zephyr Mods"
         },
         {
           "lien": "https://discord.gg/4EghSMyvWY",
           "image": "https://cdn.discordapp.com/icons/1062589624838520912/9abd29aedd95523e73c4ceda5b1ea6de.webp",
-          "name": "LEGACY SERV"
+          "name": "LEGACY Server"
         },
         {
           "lien": "https://discord.gg/minecraft-legacy-edition-987063877080584252",
@@ -121,24 +121,30 @@
 
 <iframe src="header.html" style="width: 100%; height: 50px" class="header-iframe"></iframe>
 
-<section class="hero is-large is-link">
+<section class="hero is-medium is-link ">
   <div class="hero-body">
-    <div class="fixed-grid has-3-cols">
+    <span class="not-on-desktop"><center><p class="title" >DISCORD</p> <br>
+Discover Discord servers dedicated to Minecraft PS3! Join us to chat, share your creations, and find new gaming buddies on Minecraft PS3. See you on the servers!
+        </center></span>
+    <div class="fixed-grid has-3-cols not-on-mobile">
       <div class="grid txt-desc-discord" >
       <div class="cell is-col-span-2" style="padding-right: 10%">
-        <span><center>DISCORD <br>
+        <span><center><p class="title" >DISCORD</p> <br>
 Discover Discord servers dedicated to Minecraft PS3! Join us to chat, share your creations, and find new gaming buddies on Minecraft PS3. See you on the servers!
         </center></span>
       </div>
-      <div class="cell">
+      <div class="cell not-on-mobile">
         <center>
-        <img src="img/discord-ico.png">
+        <img  src="img/discord-ico.png">
         </center>
       </div>
     </div>
     </div>
   </div>
 </section>
+
+
+
 
 <section class="hero is-medium">
   <div class="hero-body">
@@ -157,7 +163,7 @@ var galeriesDiv = document.getElementById("discord-galeries");
 // Parcourir le tableau JSON et créer les divs correspondantes
 data.discord.forEach(function(item) {
 var div = document.createElement("div");
-div.className = "cell";
+div.className = "cell cell-discord-style";
 div.innerHTML = '<a href="' + item.lien + '"><img class="img-discord" src="' + item.image + '" alt="' + item.name + '"><br><span class="name-discord">' + item.name + '</span></a>';
 galeriesDiv.appendChild(div);
 });
