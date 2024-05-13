@@ -51,6 +51,11 @@
   border-radius: 5%;
   padding: 4% 4% 4% 4%;
 }
+.cell-mods-rtm{
+  background-color: #66d1ff;
+  border-radius: 5%;
+  padding: 4% 4% 4% 4%;
+}
 
 .cell-discord-style {
   transition: all 0.2s ease-in-out;
