@@ -34,3 +34,97 @@
 
 <body>
 <iframe src="header.html" style="width: 100%; height: 50px" class="header-iframe"></iframe>
+
+
+
+<section class="hero is-medium is-link ">
+  <div class="hero-body">
+    <span class="not-on-desktop"><center><p class="title" >DISCORD</p> <br>
+Modding in Minecraft unlocks a world of endless creativity and innovation, allowing everyone to personalize their gaming experience and create something truly unique. That's why we want you to have an awesome experience on Minecraft PS3 by offering a variety of mods that cater to everyone's tastes.
+        </center></span>
+    <div class="fixed-grid has-3-cols not-on-mobile">
+      <div class="grid txt-desc-discord" >
+        <div class="cell is-col-span-2" style="padding-right: 10%">
+        <span><center><p class="title" >Modding</p> <br>
+Modding in Minecraft unlocks a world of endless creativity and innovation, allowing everyone to personalize their gaming experience and create something truly unique. That's why we want you to have an awesome experience on Minecraft PS3 by offering a variety of mods that cater to everyone's tastes.
+        </center></span>
+        </div>
+        <div class="cell not-on-mobile">
+          <center>
+            <img  src="img/mods-logo-removebg.png">
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <p class="title">SPRX</p>
+    <center>
+      <div class="grid is-col-min-12" id="sprx-galeries">
+
+      </div>
+    </center>
+  </div>
+</section>
+
+<section class="hero is-medium">
+  <div class="hero-body">
+    <p class="title">RTM</p>
+    <center>
+      <div class="grid is-col-min-12" id="rtm-galeries">
+
+      </div>
+    </center>
+  </div>
+</section>
+
+
+<script>
+  // Votre JSON Discord
+  var dataSprx = {
+      "sprx": [
+        {
+          "download": "./download/KaguraClientV1.zip",
+          "video": "kJyOtf0Q3dM",
+          "name": "Kagura Sprx V1"
+        },
+        {
+          "download": "https://download2392.mediafire.com/5rodljs6a0igmEpIfHsKhAT0vOhjIi8Q9TYwv_twbbu57_ybDMUmBhwBu1F2TayjzGL6TEErMRn6oT8Hi4J-XdbFbhCqbY4AbGje5xi-lIgWhyKyTGVnKNJrM8RCNv5VW669MNKI9gm26qBlquJlm3dMZYBRDHscE5HoQjtZFVc1/zfdmi3goo8j35gu/%5BDownCraft%5D+V4.5+Premium%28CREATED+BY+MisakiDev%29.rar",
+          "video": "Yal7zzdhfxo",
+          "name": "Downcraft V4.5"
+        },
+        {
+          "download": "https://download1526.mediafire.com/3dck1vvvgwkgnkZwtwZ45T5PAQyMleoTM7T1x5vEe1KPwDzQYSH6qiGOo0UCmaoIF9X8AybOIHQS6qj7a21knB6Z15_RumbYnjNAuMs3XNQg1v3shZ8QP9NH9YCVOo5fROmMcvjqIA0Q-aR3rstQaklOWcJGHn3ShKWq5DSO9tpo/4f28o3orxinshhy/UltimateCraftV2+%5BBLES-BLUS.rar",
+          "video": "mc7dNJh72Tc",
+          "name": "UltimateCraft V2"
+        },
+        {
+          "download": "https://download1585.mediafire.com/v9vykje5i6lgVxt3PwvTyUVgR-cSWOC1kClOAdAj96dKC3HKrlyy6cMRM8G2x5iIC1A8Gja2g8tUodV6gaEOh8PZhpIDRBylgSYdnAag8VdwYXRlHV3OZL24gq0gKC5InLHEhz3Q9MMwdD6ufLO0yG5SG__zCKXWCxkGesf-fs4d/j4uia2x02s5x3b0/DOWNCRAFT+V2.1+SPRX+MOD+MENU+%28CREATED+BY+MisakiDev%29.rar",
+          "video": "HEUuLiWTgdM",
+          "name": "Downcraft V2.1"
+        }
+      ]
+    }
+  ;
+</script>
+
+
+<script>
+  //SPRX INIT
+  var galeriesDiv = document.getElementById("rtm-galeries");
+
+  // Parcourir le tableau JSON et créer les divs correspondantes
+  dataRtm.rtm.forEach(function(itemRtm) {
+    var div = document.createElement("div");
+    div.className = "cell cell-mods-rtm";
+    div.innerHTML = '          <span class="name-discord">' + itemRtm.name + '</span>\n' +
+      '          <img class="img-mods" src="https://img.youtube.com/vi/' + itemRtm.video + '/maxresdefault.jpg" alt="YouTube Video Preview">\n' +
+      '          <a class="button is-primary is-rounded is-medium" href="' + itemRtm.download + '" download="download.zip">Download</a>';
+    galeriesDiv.appendChild(div);
+  });
+</script>
+
