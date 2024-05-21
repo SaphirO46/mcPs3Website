@@ -17,7 +17,7 @@ Minecraft PS3 Legacy Hub is your ultimate source for everything related to Minec
 
 ## Visit Our Website
 
-Discover all our resources on our website: [Minecraft PS3 Legacy Hub](https://www.minecraftps3legacyhub.com)
+Discover all our resources on our website: [Minecraft PS3 Legacy Hub](https://saphiro46.github.io/mcPs3Website/)
 
 ## Contribute
 
