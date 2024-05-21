@@ -70,6 +70,10 @@
   border-radius: 2rem;
 }
 
+.button-clegacy{
+  margin: 1% 1% 1% 1%;
+}
+
 /* Pour les écrans plus petits que 1024px */
 @media screen and (max-width: 1024px) {
   .not-on-mobile {
