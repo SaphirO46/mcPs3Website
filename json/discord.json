@@ -41,11 +41,6 @@
       "name": "no name 3"
     },
     {
-      "lien": "https://discord.gg/pcw6aUvtsj",
-      "image": "https://cdn.discordapp.com/icons/1145657856918573146/82edb679959228609577c17dd7f81786.webp",
-      "name": "no name 4"
-    },
-    {
       "lien": "https://discord.gg/bDxEFuZzzE",
       "image": "https://cdn.discordapp.com/icons/972996357457596446/082e4cff4d9fb51e41fd3e40337cbfa1.webp",
       "name": "no name 5"
@@ -67,6 +62,30 @@
       "lien": "https://discord.gg/abxTXDWdpM",
       "image": "https://cdn.discordapp.com/icons/1175634462860644433/8d5cb173ea8f3d6c4955d128f9ec085d.webp",
       "name": "no name 8"
+    }
+    ,
+    {
+      "lien": "https://discord.gg/7pwFrY78Cy",
+      "image": "https://cdn.discordapp.com/icons/707728125487742997/4fb7263381ceb1826143f5be323c7960.webp",
+      "name": "Communauté MC PS3/RPCS3 & \uD83C\uDFC6Realm YT Kadack"
+    }
+  ,
+    {
+      "lien": "https://discord.gg/xdyCma7RxY",
+      "image": "https://cdn.discordapp.com/icons/1194500576122253312/17dcd48f218b4838394c5038f91f6d2c.webp",
+      "name": "LCE Decomp"
+    }
+  ,
+    {
+      "lien": "https://discord.gg/qCbMKerqdb",
+      "image": "https://cdn.discordapp.com/icons/1122303309894656031/a_ad8b84b21277a45c554c491882a4e77b.webp",
+      "name": "giga-nerd dev mcPs3"
+    }
+  ,
+    {
+      "lien": "https://discord.gg/XVJXuJdpdc",
+      "image": "https://cdn.discordapp.com/icons/1218300967959924826/bd55f32d2bd2966eb4823db3f54f38f6.webp",
+      "name": "Nardcoo backup V2"
     }
   ]
 }
